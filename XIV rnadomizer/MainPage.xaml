@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:CheckBox ="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             x:Class="XIV_rnadomizer.MainPage"
+             >
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="endwalker.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="TextArea"
+                Text="Hello, please let us pick a random class for you!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Image
+                x:Name="ClassIcon"
+                Source="meteor.png"
+                SemanticProperties.Description="Class icon when class has been picked"
+                HeightRequest="100"
+                HorizontalOptions="Center" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <StackLayout Orientation="Vertical">
+                    <Grid>
+
+                    </Grid>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Grid.Row="1" Grid.Column="0" Margin="30">Tanks</Label>
+                        <CheckBox x:Name="Tanks" Grid.Row="1" Grid.Column="0" IsChecked="True" CheckedChanged="selectAll"></CheckBox>
+
+                        <Label Grid.Row="2" Grid.Column="0" Margin="30">WAR</Label>
+                        <CheckBox x:Name="WAR" Grid.Row="2" Grid.Column="0" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="3" Grid.Column="0" Margin="30">PLD</Label>
+                        <CheckBox x:Name="PLD" Grid.Row="3" Grid.Column="0" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="4" Grid.Column="0" Margin="30">DRK</Label>
+                        <CheckBox x:Name="DRK" Grid.Row="4" Grid.Column="0" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="5" Grid.Column="0" Margin="30">GBN</Label>
+                        <CheckBox x:Name="GBN" Grid.Row="5" Grid.Column="0" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="1" Grid.Column="3" Margin="30">Healers</Label>
+                        <CheckBox x:Name="Healers" Grid.Column="3" Grid.Row="1" IsChecked="True" CheckedChanged="selectAll"></CheckBox>
+
+                        <Label Grid.Row="2" Grid.Column="3" Margin="30">WHM</Label>
+                        <CheckBox x:Name="WHM" Grid.Column="3" Grid.Row="2" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="3" Grid.Column="3" Margin="30">SCH</Label>
+                        <CheckBox x:Name="SCH" Grid.Column="3" Grid.Row="3" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="4" Grid.Column="3" Margin="30">AST</Label>
+                        <CheckBox x:Name="AST" Grid.Column="3" Grid.Row="4" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="5" Grid.Column="3" Margin="30">SGE</Label>
+                        <CheckBox x:Name="SGE" Grid.Column="3" Grid.Row="5" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="1" Grid.Column="4" Margin="30">Melees</Label>
+                        <CheckBox x:Name="Melees" Grid.Column="4" Grid.Row="1" IsChecked="True" CheckedChanged="selectAll"></CheckBox>
+
+                        <Label Grid.Row="2" Grid.Column="4" Margin="30">MNK</Label>
+                        <CheckBox x:Name="MNK" Grid.Column="4" Grid.Row="2" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="3" Grid.Column="4" Margin="30">DRG</Label>
+                        <CheckBox x:Name="DRG" Grid.Column="4" Grid.Row="3" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="4" Grid.Column="4" Margin="30">NIN</Label>
+                        <CheckBox x:Name="NIN" Grid.Column="4" Grid.Row="4" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="5" Grid.Column="4" Margin="30">SAM</Label>
+                        <CheckBox x:Name="SAM" Grid.Column="4" Grid.Row="5" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="6" Grid.Column="4" Margin="30">RPR</Label>
+                        <CheckBox x:Name="RPR" Grid.Column="4" Grid.Row="6" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="1" Grid.Column="5" Margin="30">Physranged</Label>
+                        <CheckBox x:Name="physranged" Grid.Column="5" Grid.Row="1" IsChecked="True" CheckedChanged="selectAll"></CheckBox>
+
+                        <Label Grid.Row="2" Grid.Column="5" Margin="30">BRD</Label>
+                        <CheckBox x:Name="BRD" Grid.Column="5" Grid.Row="2" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="3" Grid.Column="5" Margin="30">MCH</Label>
+                        <CheckBox x:Name="MCH" Grid.Column="5" Grid.Row="3" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="4" Grid.Column="5" Margin="30">DNC</Label>
+                        <CheckBox x:Name="DNC" Grid.Column="5" Grid.Row="4" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="1" Grid.Column="6" Margin="30">Casters</Label>
+                        <CheckBox x:Name="Casters" Grid.Column="6" Grid.Row="1" IsChecked="True" CheckedChanged="selectAll"></CheckBox>
+
+                        <Label Grid.Row="2" Grid.Column="6" Margin="30">BLM</Label>
+                        <CheckBox x:Name="BLM" Grid.Row="2" Grid.Column="6" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="3" Grid.Column="6" Margin="30">SMN</Label>
+                        <CheckBox x:Name="SMN" Grid.Row="3" Grid.Column="6" IsChecked="True" CheckedChanged="checkChange"></CheckBox>
+
+                        <Label Grid.Row="4" Grid.Column ="6" Margin="30">RDM</Label>
+                        <CheckBox x:Name="RDM" Grid.Row="4" Grid.Column="6" IsChecked="True" CheckedChanged= "checkChange" ></CheckBox>
+
+
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+
+            <Button
+                x:Name="RandomBtn"
+                Text="Pick a class!"
+                SemanticProperties.Hint="Picks a random class and displays it"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+            <!--<Image
+                x:Name="ClassIcon"
+                Source="meteor.png"
+                SemanticProperties.Description="Class icon when class has been picked"
+                HeightRequest="100"
+                HorizontalOptions="Center" />-->
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
